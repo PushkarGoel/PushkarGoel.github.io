@@ -1,199 +1,143 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width,initial-scale=1">
 <head>
-	<title></title>
-	<style type="text/css">
-		body{
-			background: url(bgblue.jpg); 
-			margin: 0;
-		}
-		.menu{
-			width: 100%;
-			background: #142b47;
-			overflow: auto;
-		}
-		.menu ul{
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			line-height: 4vw;
-		}
-		.menu li{
-			float:left;
-		}
-		.menu ul li a{
-			background: #142b47;
-			text-decoration: none;
-			width: 10vw;
-			display: block;
-			text-align: center;
-			color: #f2f2f2;
-			font-size: 1.5vw;
-			font-family: sans-serif;
-			letter-spacing: 0.5px;		}
-			.menu li a:hover{
-				color: :#fff;
-				opacity: 0.5;
-				font-size: 1;
-
-			}
-			.search-form{
-				margin-top: 10%;
-				margin-left: 8%;
-				margin-right: 10%;
-			}
-			input[type=text]{
-				padding: 0.5vw;
-				border:none;
-				width: 50%;
-				font-size: 1.1vw;
-				font-family: sans-serif;
-			}
-			button{
-				
-				background: orange;
-				color: white;
-				border-radius: 0 50% 50% 0;
-				cursor: pointer;
-				position: relative;
-				padding: 0.5vw;
-				font-family: sans-serif;
-				border: none;
-				font-size:1.1vw;
-			}
-			.menu .active{
-				background: #0000ff;
-			text-decoration: none;
-			width: 9.2vw;
-			display: block;
-			text-align: center;
-			color: #f2f2f2;
-			font-size: 1.3vw;
-			font-family: sans-serif;
-			letter-spacing: 0.06vw;	
-			}
-			
-			.loginbox{
-				float: right;
-				font-family: sans-serif;
-				width: 22.7vw;
-				height: 30vw;
-				background: rgba(0,0,0,0.7);
-				border-radius: 3%;
-				color: #fff;
-				top:50%;
-				height: 75%;
-				left: 85%;
-				padding: 0.8vw 1.5vw 0.4vw 1.2vw;
-				position: absolute;
-				transform: translate(-50%,-40%);
-				border-radius: border-box;
-			}
-			.avatar{
-				width: 7.2vw;
-				height: 7.2vw;
-				border-radius:50%;
-				margin-left: 37%;
-				top: -50px;
-				left: calc(50% - 50px);
-			}
-			.loginbox h1{
-				margin: 0;
-				margin-bottom: 10%;
-				padding: 0;
-				text-align: center;
-				font-size: 1.5vw;
-			}
-			h2{
-				margin: 0;
-				padding: 0;
-				text-align: center;
-				font-size: 1.5vw;
-			}
-			.loginbox p{
-				margin: 0.25vw;
-				padding: 0;
-				font-weight: bold;
-
-			}
-			.loginbox input{
-				width: 100%;
-				margin-bottom: 2.8vw;
-			}
-		.loginbox input[type="text"],input[type="password"]
-		{
-			border: none;
-			border-bottom: 0.08vw solid #fff;
-			background: transparent;
-			outline: none;
-			height: 2.8vw;
-			color: #fff;
-			font-size: 1.2vw;
-
-		}
-		.loginbox input[type="submit"]
-		{
-			border: none;
-			outline: none;
-			height: 2.8vw;
-			background: #142b47;
-			color: #fff;
-			font-size: 1.4vw;
-			border-radius: 1.5vw; 
-
-		}
-		.loginbox input[type="submit"]:hover
-		{
-			cursor: pointer;
-			background: #ffx107;
-			color:#000;
-		}
-		.loginbox a{
-			text-decoration: none;
-			font-size: 1vw;
-			line-height: 1.5vw;
-			color: darkgrey;
-
-		}
-		.loginbox a:hover
-		{
-			color: #ffc107;
-		}
-
-	</style>
-
+	<title> the recruitment firm </title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
 </head>
-<body>
-	<nav class="menu">
-		<h2>RecruitmentFirm.in</h1>
-		<ul>
-			<li><a class='active' href ="#">Home</a></li>
-			<li><a href ="#">About us</a></li>
-			<li><a href ="#">Trending</a></li>
-			<li><a href ="#">Contact Us</a></li>
-			</ul>
-		</nav>
-			<br><br><br>
+<body >
+<section  id="nav-bar">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">logo here</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" ></i>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+             <b><a class="nav-link" href="#"><b>Home</b> </a></b>
+          </li>
+          <li class="nav-item">
+             <b><a class="nav-link" href="#"><b>Services</b></a></b>
+          </li>
+          <li class="nav-item">
+            <b> <a class="nav-link" href="#"><b>About Us</b></a></b>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link " href="#"><b>Contact Us</b></a>
+          </li>
+      </ul>
+    </div>
+</nav>
+	
+</section>
+<!-------------------- banner section ------------>
+<section id ="banner">
+	<div class="container">
+		<div class="row">
+		<div class="col-md-6">
+			<p class ="promo-title"> Best Recruitment Firm</p>
+			<p> we are here to provide you best job opportunites in your expertise</p>
+			<p>(can put motto here) 		</p>
 			<form class ="search-form">
 				<input type="text" placeholder="Search" >
 				<button>Search</button>
-				
-			</form>
+
+	    </form>
+	    </div>
+	    	</div>
+	</div> 
+	<!-------------------- Login Box   ------------>		
 			<div class ="loginbox">
-				<img src="userimg.png" class="avatar">
-		<h1>LOGIN HERE</h1>
+				<div class="col-md-8">
 		<form>
 			<p>Username</p>
 			<input type="text" name="" placeholder="Enter username">
 			<p>Password</p>
 			<input type="password" name="" placeholder="Enter password">
 			<input type="submit" name="" placeholder="login" value="Login">
-			<a href ="#">Lost your password</a><br>
+			<a href ="#">Forgot password?</a><br>
 			<a href ="#">Don't have an account</a>
 		</form>
-	</div>
 
+	</div> 
+	</div> 
+</section>
+	<!---------------------service section -------------------->
+	<section id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<br>
+					<h4> Sales Jobs(will contain jobs offered)</h4>
+					<br>
+		</div>
+			
+		</div>
+		</div>
+
+</section>
+<!-----------footer--------->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					
+					<p class="h6">&copy All right Reversed.</p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
 
 </body>
 </html>
